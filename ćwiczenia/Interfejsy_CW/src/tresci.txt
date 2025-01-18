@@ -1,0 +1,54 @@
+ZAD4
+Napisz interfejs Converter z trzema abstrakcyjnymi metodami: convertToEuro(double
+amount) zwracającą double, convertToUSD(double amount) zwracającą double oraz
+getConversionRate(String currency) przyjmującą nazwę waluty jako String i zwra-
+cającą double. Stwórz dwie klasy: CurrencyConverter i UnitConverter, które imple-
+mentują ten interfejs. W osobnej klasie ConverterTest, przetestuj implementację metod
+dla obiektów obu klas.
+
+ZAD10
+Wykonaj poniższe czynności:
+• Utwórz interfejs VehicleManager z dwoma metodami abstrakcyjnymi: startEngine()
+zwracającą String i getFuelLevel() zwracającą int.
+• Stwórz klasę Car, implementującą VehicleManager. W metodzie startEngine zwróć
+“Silnik samochodu uruchomiony”, a w getFuelLevel zwróć wartość 50.
+• Stwórz klasę Motorcycle, również implementującą VehicleManager. W startEngine
+zwróć “Silnik motocykla uruchomiony”, a w getFuelLevel zwróć wartość 30.
+• W klasie VehicleManagerTest stwórz obiekty obu klas i przetestuj ich metody.
+
+ZAD11
+Wykonaj poniższe czynności:
+• Stwórz interfejs AnimalSound z jedną metodą makeSound().
+• Rozszerz ten interfejs, tworząc interfejs DomesticAnimalSound, który dodaje metodę
+makeHappySound().
+• Stwórz klasę Dog, która implementuje DomesticAnimalSound. Metoda makeSound()
+powinna zwracać string “Woof”, a makeHappySound() - “Wag tail”.
+• W osobnej klasie testującej (TestAnimals), utwórz obiekt Dog i wywołaj obie metody.
+
+ZAD14
+Stwórz interfejs Drawable z:
+• Metodą abstrakcyjną draw().
+• Metodą domyślną display() wyświetlającą informację “Displaying Drawable”.
+• Metodą statyczną getType() zwracającą String “Drawable Type”.
+Stwórz klasy Circle i Rectangle, które implementują Drawable. draw() w Circle powinno
+wyświetlać “Drawing Circle”, a w Rectangle - “Drawing Rectangle”. Stwórz klasę testującą
+DrawableTester. Utwórz obiekty Circle i Rectangle, wywołaj dla nich draw() i display(),
+oraz statycznie Drawable.getType().
+
+ZAD15
+Stwórz interfejs SoundPlayer z:
+• Metodą abstrakcyjną playSound().
+• Metodą domyślną stopSound() wyświetlającą informację “Sound Stopped”.
+• Metodą statyczną getDeviceType() zwracającą String “Sound Device”.
+Stwórz klasy MusicPlayer i Radio, które implementują SoundPlayer. playSound() w
+MusicPlayer powinno wyświetlać “Playing Music”, a w Radio - “Playing Radio”. Stwórz
+klasę testującą SoundTester. Utwórz obiekty MusicPlayer i Radio, wywołaj dla nich
+playSound() i stopSound(), oraz statycznie SoundPlayer.getDeviceType().
+
+ZAD17
+Stwórz interfejs VATCalculator z:
+• Polem double vatRate ustawionym na wartość standardowej stawki VAT (np. 23%).
+• Metodą statyczną calculateWithVAT(double price), która oblicza i zwraca cenę pro-
+duktu z doliczonym VAT.
+Stwórz klasę testującą VATTest, która wywołuje metodę calculateWithVAT(double price)
+z przykładową ceną produktu i wyświetla wynik.
