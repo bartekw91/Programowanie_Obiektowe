@@ -1,0 +1,67 @@
+ZAD1
+Stwórz prostą klasę generyczną Box, która może przechowywać obiekt dowolnego typu.
+Klasa powinna zawierać metodę set, aby ustawić obiekt, oraz metodę get, aby go pobrać.
+
+ZAD2
+Napisz generyczną metodę isEqual, która przyjmuje dwa dowolne obiekty tego samego
+typu i zwraca true, jeśli są one równe, w przeciwnym razie false.
+
+ZAD3
+Stwórz klasę generyczną Counter<T>, która będzie zliczać ilość dodanych elementów
+określonego typu. Klasa powinna mieć metodę add(T element), która dodaje element
+do wewnętrznej struktury, oraz metodę getCount(), która zwraca liczbę dodanych ele-
+mentów.
+
+ZAD4
+Stwórz klasę generyczną Triple<T, U, V>, która może przechowywać trzy obiekty róż-
+nych typów. Zaimplementuj metody getFirst(), getSecond() i getThird() do pobie-
+rania odpowiednio pierwszego, drugiego i trzeciego elementu.
+
+ZAD12
+Napisz statyczną metodę generyczną swap, która przyjmuje tablicę dowolnego typu i
+dwa indeksy, a następnie zamienia miejscami elementy w tej tablicy pod wskazanymi
+indeksami. Metoda powinna działać dla tablicy każdego typu. Przykładowe wywołanie
+metody: swap(myArray, 0, 2);, gdzie myArray to tablica typu Integer[] lub dowol-
+nego innego typu. Zabezpiecz metodę tak, aby nie można było jej wywołać z indeksami
+spoza zakresu tablicy.
+
+ZAD14
+Napisz statyczną metodę generyczną minValue, która przyjmuje tablicę elementów typu
+generycznego T, gdzie T rozszerza Comparable<T>. Metoda powinna zwracać najmniejszy
+element z tablicy. Przetestuj tę metodę na tablicach zawierających różne typy porówny-
+walnych obiektów, takie jak Integer, Double, czy String. Zabezpiecz metodę tak, aby
+nie można było jej wywołać z tablicą o zerowej liczbie elementów. Dodaj klasę Person z
+polami name i age i przetestuj metodę minValue na tablicy obiektów Person.
+
+ZAD15
+Napisz statyczną metodę generyczną maxValue, która przyjmuje tablicę elementów typu
+generycznego T, gdzie T rozszerza Comparable<T>. Metoda powinna zwracać największy
+element z tablicy. Upewnij się, że metoda nie akceptuje pustej tablicy (o zerowej liczbie
+elementów). Przetestuj metodę na tablicach zawierających różne typy porównywalnych
+obiektów, jak Integer, Float, czy String. Stwórz klasę Vehicle z polami model i
+speed, implementującą generyczny Comparable, i przetestuj metodę maxValue na tablicy
+obiektów Vehicle.
+
+ZAD21
+Utwórz dwie klasy: Animal (Zwierzę) i Dog (Pies), gdzie Dog dziedziczy po Animal. Na-
+stępnie napisz statyczną metodę generyczną findMax, która przyjmuje dwa argumenty:
+element1 i element2 typu extends Animal. Metoda powinna zwracać element więk-
+szy według własnie zdefiniowanego kryterium porównania. W implementacji porównaj
+elementy bazując na wybranym przez siebie atrybucie, na przykład wieku.
+
+ZAD23
+Stwórz klasę generyczną Pair<T> która przechowuje dwa obiekty tego samego typu.
+Utwórz dwie klasy: Animal (Zwierzę) i Dog (Pies), gdzie Dog dziedziczy po Animal. Na-
+stępnie napisz statyczną metodę generyczną findMax, która przyjmuje Pair<? extends
+Animal>. Metoda powinna zwracać element większy według własnie zdefiniowanego kry-
+terium porównania.
+
+ZAD28
+Stwórz klasę generyczną Pair<T> która przechowuje dwa obiekty tego samego typu.
+Utwórz dwie klasy: Animal (Zwierzę) i Dog (Pies), gdzie Dog dziedziczy po Animal.
+Klasa Dog ma posiadać prywatne pole age, które nie posiada klasa Animal. Następnie
+napisz statyczną metodę generyczną findMinMaxAge, która przyjmuje jako argument ta-
+blicę obiektów typu Dog oraz Pair<?super Dog> result. Metoda powinna ma zapisać
+(jako obiekty typu Dog) najmniejszy i najmniejszy (pod kątem wieku) psa z tablicy w
+drugim argumencie metody. Zrób to bezpośrednio bez używania interfejsów Comparable
+czy Comparator.

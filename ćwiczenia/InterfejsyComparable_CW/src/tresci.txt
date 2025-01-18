@@ -1,0 +1,44 @@
+ZAD1
+Napisz klasę Student, która zawiera pola: name (typu String), averageGrade (typu
+double) i yearOfBirth (typu int). Zaimplementuj interfejs Comparable w taki sposób,
+aby obiekty klasy Student były sortowane malejąco według średniej ocen. Stwórz listę
+tablicową 5 obiektów klasy Student i posortuj ją według sprecyzowanego kryterium.
+
+ZAD7
+Napisz klasę Car, która zawiera pola: brand (typu String), mileage (typu int) i
+yearOfProduction (typu int). Zaimplementuj interfejs Comparable w taki sposób, aby
+obiekty klasy Car były sortowane rosnąco według przebiegu. Stwórz tablicę 4 obiektów
+klasy Car i posortuj ją według sprecyzowanego kryterium.
+
+ZAD11
+Napisz klasę Student, która zawiera pola: name (typu String), averageGrade (typu
+double) i yearOfStudy (typu int). Zaimplementuj interfejs Comparable w taki sposób,
+aby obiekty klasy Student były sortowane według jednego kryterium: malejąco według
+średniej ocen, a przy równości sortowane były rosnąco według roku studiów. Stwórz
+tablicę 4 obiektów klasy Student i posortuj ją według sprecyzowanego kryterium.
+
+ZAD12
+Napisz klasę Order, która zawiera pola: productName (typu String), quantity (typu
+int) i unitPrice (typu double). Zaimplementuj interfejs Comparable w taki sposób,
+aby obiekty klasy Order były sortowane według jednego kryterium: malejąco według
+ceny jednostkowej, a przy równości sortowane były rosnąco według ilości. Stwórz listę
+tablicową 4 obiektów klasy Order i posortuj ją według sprecyzowanego kryterium.
+
+ZAD17
+Napisz klasę Employee, która zawiera pola: firstName (typu String), lastName (typu
+String) i position (typu String). Zaimplementuj interfejs Comparable w taki sposób,
+aby obiekty klasy Employee były sortowane według jednego kryterium: rosnąco według
+długości nazwiska. Stwórz listę tablicową 4 obiektów klasy Employee i posortuj ją według
+sprecyzowanego kryterium.
+
+ZAD22
+Zdefiniuj klasę Animal, która będzie implementować generyczny interfejs Comparable. W
+klasie tej zadeklaruj prywatne pola species typu String oraz age typu int. Implemen-
+tując metodę compareTo interfejsu Comparable, porównuj zwierzęta na podstawie ich
+wieku, a w przypadku takiego samego wieku - na podstawie gatunku. Następnie zdefiniuj
+klasę Dog dziedziczącą po klasie Animal. Klasa Dog ma dodatkowo posiadać prywatne
+pole breed typu String. Implementując metodę compareTo interfejsu Comparable w
+klasie Dog, skorzystaj z metody compareTo zdefiniowanej w klasie Animal oraz, w razie
+potrzeby, uwzględnij pole breed. Napisz program TestAnimal, w którym utwórz listę
+tablicową 5 zwierząt i psów o nazwie animalList posługując się klasą ArrayList. W
+składzie listy powinny wystąpić przynajmniej po 3 obiekty różnych typów.
